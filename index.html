@@ -18,9 +18,11 @@
 
     <!-- 버튼 영역 -->
     <section class="button-area">
-        <button id="btn-kospi">🎲 랜덤 KOSPI200</button>
-        <button id="btn-sp500">🎲 랜덤 S&P500</button>
-    </section>
+    <button id="btn-sp500">🎲 랜덤 S&P500</button>
+    <button disabled class="disabled">
+        🚧 KOSPI200 (준비중)
+    </button>
+</section>
 
     <!-- 결과 카드 -->
     <section id="result" class="hidden">
@@ -31,12 +33,12 @@
             <span id="company-market">KOSPI200</span>
         </div>
 
-        <div class="card ai">
-            <h3>📌 AI 요약</h3>
-            <p id="ai-summary">
-                단기 변동성은 있으나 중장기 안정성은 양호한 편입니다.
-            </p>
-        </div>
+<div class="card ai">
+    <h3>📌 기업 요약</h3>
+    <p id="company-summary">분석 중...</p>
+
+    <div class="summary-points" id="summary-points"></div>
+</div>
 
         <div class="row">
             <div class="card up">
@@ -60,11 +62,20 @@
             </div>
         </div>
 
-        <div class="card sentiment">
-            <h3>📊 시장 심리</h3>
-            <p>거래량: 평균 대비 +35% 🔥</p>
-            <p>공포·탐욕 지수: 62 (탐욕)</p>
-        </div>
+<div class="card sentiment">
+    <h3>📊 시장 심리</h3>
+
+    <div class="gauge">
+        <div class="gauge-fill" id="fg-bar"></div>
+    </div>
+
+    <div class="gauge-info">
+        <span id="fg-score">--</span>
+        <span id="fg-text">계산 중</span>
+    </div>
+
+    <div class="fg-desc" id="fg-desc"></div>
+</div>
 
         <p class="disclaimer">
             ⚠️ 본 서비스는 재미·학습용이며 투자 책임은 사용자에게 있습니다.
