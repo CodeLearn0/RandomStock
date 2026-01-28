@@ -1,0 +1,100 @@
+* {
+    box-sizing: border-box;
+    font-family: "Pretendard", "Apple SD Gothic Neo", sans-serif;
+}
+
+body {
+    margin: 0;
+    background: linear-gradient(180deg, #0f172a, #020617);
+    color: #ffffff;
+}
+
+.app {
+    max-width: 420px;
+    margin: auto;
+    padding: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.header h1 {
+    margin: 0;
+    font-size: 26px;
+}
+
+.header p {
+    opacity: 0.8;
+    font-size: 14px;
+}
+
+.button-area {
+    display: flex;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.button-area button {
+    flex: 1;
+    padding: 14px;
+    font-size: 15px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: #2563eb;
+    color: white;
+}
+
+.button-area button:hover {
+    background: #1d4ed8;
+}
+
+.card {
+    background: #020617;
+    border-radius: 14px;
+    padding: 16px;
+    margin-bottom: 14px;
+    box-shadow: 0 0 0 1px rgba(255,255,255,0.05);
+}
+
+.company span {
+    font-size: 12px;
+    opacity: 0.7;
+}
+
+.row {
+    display: flex;
+    gap: 12px;
+}
+
+.row .card {
+    flex: 1;
+}
+
+.up {
+    border-left: 4px solid #22c55e;
+}
+
+.down {
+    border-left: 4px solid #ef4444;
+}
+
+.ai {
+    border-left: 4px solid #eab308;
+}
+
+.sentiment {
+    border-left: 4px solid #38bdf8;
+}
+
+.hidden {
+    display: none;
+}
+
+.disclaimer {
+    font-size: 11px;
+    opacity: 0.6;
+    text-align: center;
+}

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8" />
+    <title>랜덤 주식 뽑기</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<div class="app">
+
+    <!-- 헤더 -->
+    <header class="header">
+        <h1>🎰 Random Stock Picker</h1>
+        <p>운으로 뽑고, 생각으로 배우는 주식</p>
+    </header>
+
+    <!-- 버튼 영역 -->
+    <section class="button-area">
+        <button id="btn-kospi">🎲 랜덤 KOSPI200</button>
+        <button id="btn-sp500">🎲 랜덤 S&P500</button>
+    </section>
+
+    <!-- 결과 카드 -->
+    <section id="result" class="hidden">
+
+        <div class="card company">
+            <h2 id="company-name">삼성전자</h2>
+            <p id="company-price">현재가: ₩72,300 (+1.2%)</p>
+            <span id="company-market">KOSPI200</span>
+        </div>
+
+        <div class="card ai">
+            <h3>📌 AI 요약</h3>
+            <p id="ai-summary">
+                단기 변동성은 있으나 중장기 안정성은 양호한 편입니다.
+            </p>
+        </div>
+
+        <div class="row">
+            <div class="card up">
+                <h3>📈 상승 시나리오</h3>
+                <p><strong>목표:</strong> +12%</p>
+                <ul>
+                    <li>실적 개선</li>
+                    <li>업황 회복</li>
+                    <li>외국인 수급</li>
+                </ul>
+            </div>
+
+            <div class="card down">
+                <h3>📉 하락 시나리오</h3>
+                <p><strong>위험:</strong> -9%</p>
+                <ul>
+                    <li>금리 리스크</li>
+                    <li>환율 변동</li>
+                    <li>거래량 감소</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="card sentiment">
+            <h3>📊 시장 심리</h3>
+            <p>거래량: 평균 대비 +35% 🔥</p>
+            <p>공포·탐욕 지수: 62 (탐욕)</p>
+        </div>
+
+        <p class="disclaimer">
+            ⚠️ 본 서비스는 재미·학습용이며 투자 책임은 사용자에게 있습니다.
+        </p>
+
+    </section>
+
+</div>
+
+<script src="stocks.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
