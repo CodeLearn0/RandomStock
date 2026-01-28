@@ -1,8 +1,20 @@
 // =========================
 // DOM
 // =========================
-const result = document.getElementById("result");
-const btnSP500 = document.getElementById("btn-sp500");
+document.addEventListener("DOMContentLoaded", () => {
+
+    const result = document.getElementById("result");
+    const btnSP500 = document.getElementById("btn-sp500");
+
+    if (!btnSP500) {
+        console.error("btn-sp500 버튼을 찾을 수 없습니다.");
+        return;
+    }
+
+    btnSP500.addEventListener("click", pickRandomSP500);
+
+});
+
 
 // =========================
 // 이벤트
